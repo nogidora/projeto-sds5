@@ -3,7 +3,7 @@ import Chart from 'react-apexcharts';
 /*modelo do apex charts*/
 const  DonutChart = () =>{
    const mockData = {
-      series: [477138, 499928, 444867, 220426, 473088],
+      series: [449138, 433928, 466867, 292426, 450088],
       labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
   }
   
