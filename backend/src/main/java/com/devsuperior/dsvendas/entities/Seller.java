@@ -10,10 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 @Entity
 @Table(name = "tb_sellers")
 public class Seller {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -22,13 +25,10 @@ public class Seller {
 	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();
 	
-	public Seller(){
-		
-		
+	public Seller() {
 	}
 
 	public Seller(Long id, String name) {
-		super();
 		this.id = id;
 		this.name = name;
 	}
