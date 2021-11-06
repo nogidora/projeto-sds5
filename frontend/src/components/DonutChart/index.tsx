@@ -30,13 +30,7 @@ const  DonutChart = () =>{
    }, [])
    //FORMA ERRADA!!
    //let chartData : ChartData = { labels: [], series: []};
- 
 
-//   const mockData = {
-//      series: [449138, 433928, 466867, 292426, 450088],
-//      labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-//  }
-  
   const options = {
       legend: {
           show: true
